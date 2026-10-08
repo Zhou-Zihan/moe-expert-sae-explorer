@@ -1,0 +1,37 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid #d9d3cb;
+  background: #fff;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  flex: 0 0 26px;
+  min-width: 0;
+  padding: 0 10px;
+  color: #fff;
+  background: #8b7357;
+}
+
+.panel-header h2 {
+  overflow: hidden;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel-content {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  background: #fff;
+}

@@ -1,0 +1,130 @@
+.sae-features-panel .panel-content {
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.sae-features-message {
+  margin: auto;
+  padding: 16px;
+  color: #827d75;
+  font-size: 13px;
+  text-align: center;
+}
+
+.sae-features-message button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: #4778ae;
+  cursor: pointer;
+}
+
+.sae-features-table {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px 10px;
+}
+
+.sae-features-table-head,
+.sae-feature-row {
+  display: grid;
+  grid-template-columns: 27px 72px minmax(0, 1fr) 139px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.sae-features-table-head {
+  flex: 0 0 27px;
+  border-bottom: 1px solid #e9e4dc;
+  color: #777168;
+  font-size: 11px;
+}
+
+.sae-features-list {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.sae-features-list::-webkit-scrollbar {
+  display: none;
+}
+
+.sae-feature-row {
+  width: 100%;
+  height: 27px;
+  border: 0;
+  padding: 0;
+  background: #fff;
+  color: #3c3833;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sae-feature-row:hover,
+.sae-feature-row:focus-visible {
+  background: #f6f2ec;
+}
+
+.sae-feature-row.is-selected {
+  background: #f1e9df;
+}
+
+.sae-feature-rank {
+  color: #817a70;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+}
+
+.sae-feature-id {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+}
+
+.sae-feature-row.is-selected .sae-feature-id {
+  color: #b9542a;
+}
+
+.sae-feature-semantics {
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sae-feature-activation {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.sae-feature-bar {
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+  background: #eeeae4;
+}
+
+.sae-feature-bar > span {
+  display: block;
+  height: 100%;
+  background: #3b5b7a;
+}
+
+.sae-feature-value {
+  flex: 0 0 34px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

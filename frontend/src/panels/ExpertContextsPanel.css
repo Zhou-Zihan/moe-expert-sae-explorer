@@ -1,0 +1,219 @@
+.expert-contexts-panel .panel-content {
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.expert-contexts-message {
+  margin: auto;
+  padding: 16px;
+  color: #827d75;
+  font-size: 13px;
+  text-align: center;
+}
+
+.expert-contexts-message button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: #4778ae;
+  cursor: pointer;
+}
+
+.expert-contexts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  width: 100%;
+  min-height: 0;
+  padding: 8px;
+}
+
+.expert-context-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid #e5ded3;
+  padding: 5px 7px 4px;
+  background: #fff;
+}
+
+.expert-context-card-header {
+  display: flex;
+  align-items: center;
+  flex: 0 0 22px;
+  gap: 4px;
+  min-width: 0;
+  border-bottom: 1px solid #e9e4dc;
+  color: #36332e;
+}
+
+.expert-context-card-header strong {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.expert-context-rank {
+  display: grid;
+  place-items: center;
+  flex: 0 0 18px;
+  height: 18px;
+  background: #f1e9df;
+  color: #8b7357;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.expert-context-count {
+  overflow: hidden;
+  margin-left: auto;
+  color: #827d75;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expert-context-examples {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 3px 0 0;
+  overflow-y: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.expert-context-examples::-webkit-scrollbar {
+  display: none;
+}
+
+.expert-context-example {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 20px;
+  min-width: 0;
+  color: #746e66;
+  font-size: 10px;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.expert-context-example:focus-visible {
+  outline: 2px solid #8b7357;
+  outline-offset: -2px;
+}
+
+.expert-context-sample {
+  flex: 0 0 27px;
+  color: #817a70;
+  font-variant-numeric: tabular-nums;
+}
+
+.expert-context-snippet {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.expert-context-before,
+.expert-context-after {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expert-context-before {
+  text-align: right;
+}
+
+.expert-context-after {
+  text-align: left;
+}
+
+.expert-context-snippet mark {
+  flex: 0 0 auto;
+  max-width: 70px;
+  overflow: hidden;
+  padding: 1px 2px;
+  background: #dcae9a;
+  color: #443d37;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expert-context-weight {
+  flex: 0 0 24px;
+  color: #746e66;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.expert-context-domain-mix {
+  flex: 0 0 26px;
+  padding-top: 2px;
+  color: #827d75;
+  font-size: 10px;
+}
+
+.expert-context-domain-bar {
+  display: flex;
+  height: 6px;
+  margin-top: 3px;
+  overflow: hidden;
+  background: #eee9e2;
+}
+
+.expert-context-tooltip {
+  position: fixed;
+  z-index: 20;
+  width: min(440px, calc(100vw - 24px));
+  overflow-y: auto;
+  border: 1px solid #cdbfaa;
+  background: #fffdf9;
+  box-shadow: 0 8px 24px #3f302a2b;
+  color: #3e3934;
+  scrollbar-width: none;
+}
+
+.expert-context-tooltip::-webkit-scrollbar {
+  display: none;
+}
+
+.expert-context-tooltip-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e8e1d8;
+  background: #f7f3ed;
+  color: #675a4c;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+}
+
+.expert-context-tooltip p {
+  margin: 0;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.expert-context-tooltip mark {
+  padding: 1px 2px;
+  color: #443d37;
+  background: #dcae9a;
+}

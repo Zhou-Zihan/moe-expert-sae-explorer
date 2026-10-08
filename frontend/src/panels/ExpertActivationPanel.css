@@ -1,0 +1,144 @@
+.expert-activation-panel .panel-content {
+  display: flex;
+  min-height: 0;
+}
+
+.heatmap-message {
+  margin: auto;
+  padding: 16px;
+  color: #827d75;
+  font-size: 13px;
+  text-align: center;
+}
+
+.heatmap-message button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: #4778ae;
+  cursor: pointer;
+}
+
+.heatmap-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding: 6px 6px 3px;
+}
+
+.heatmap-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 27px;
+  padding: 0 7px;
+  color: #79736c;
+  font-size: 11px;
+}
+
+.heatmap-token {
+  overflow: hidden;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heatmap-legend {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.heatmap-gradient {
+  width: 84px;
+  height: 8px;
+  border: 1px solid #d9d3cb;
+  background: linear-gradient(to right, #f7f4ee, #3b5b7a);
+}
+
+.heatmap-legend-title {
+  margin-left: 3px;
+  color: #4a4540;
+}
+
+.heatmap-range-button {
+  margin-left: 3px;
+  border: 1px solid #d9d3cb;
+  border-radius: 2px;
+  padding: 2px 5px;
+  background: #f7f4ee;
+  color: #5c5751;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.heatmap-range-button:hover,
+.heatmap-range-button:focus-visible {
+  border-color: #8b7357;
+}
+
+.heatmap-chart-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.heatmap-chart {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.heatmap-column {
+  cursor: pointer;
+}
+
+.heatmap-tick,
+.heatmap-axis-title {
+  fill: #817b72;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+}
+
+.heatmap-axis-title {
+  font-size: 11px;
+}
+
+.heatmap-y-tick {
+  text-anchor: end;
+}
+
+.heatmap-x-tick {
+  text-anchor: middle;
+}
+
+.heatmap-x-tick.is-selected,
+.heatmap-selected-expert {
+  fill: #c66b3d;
+}
+
+.heatmap-selected-expert {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+}
+
+.heatmap-selected-expert line {
+  stroke: #c66b3d;
+  stroke-width: 1.2;
+}
+
+.heatmap-scale-note {
+  overflow: hidden;
+  padding: 2px 9px 0;
+  color: #938d84;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
